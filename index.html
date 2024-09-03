@@ -4,85 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javelin AI</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
             background-color: #f4f4f4;
-        }
-        .logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 200px;
-        }
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-        }
-        .section {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .contact-links {
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .contact-links a {
-            text-decoration: none;
-            color: #3498db;
-            display: flex;
             align-items: center;
+            min-height: 100vh;
         }
-        .contact-links img {
-            width: 24px;
-            height: 24px;
-            margin-right: 5px;
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+        }
+        .services {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        .services li {
+            margin-bottom: 0.5rem;
+            color: #34495e;
+        }
+        .services li::before {
+            content: "▹";
+            color: #27ae60;
+            margin-right: 0.5rem;
+        }
+        .contact-info {
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+        .contact-info a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="images/JavelinAI.webp" alt="Javelin AI Logo" class="logo">
-    <h1>Javelin AI</h1>
-    
-    <div class="section">
-        <h2>About Us</h2>
-        <p>Javelin AI is a cutting-edge company specializing in artificial intelligence solutions. We're dedicated to helping businesses and individuals harness the power of AI to drive innovation and growth.</p>
-    </div>
-    
-    <div class="section">
-        <h2>Our Services</h2>
-        <ul>
-            <li>AI Training and Education</li>
+    <div class="container">
+        <img src="images/JavelinAI.webp" alt="Javelin AI Logo" class="logo">
+        <h1>Javelin AI</h1>
+        <p class="tagline">Empowering businesses with cutting-edge AI solutions</p>
+        <ul class="services" aria-label="Our Services">
+            <li>AI Training/Education</li>
             <li>AI Consulting</li>
             <li>Custom AI Projects</li>
         </ul>
+        <p class="contact-info">
+            Our website is under construction. For inquiries, please contact 
+            <a href="mailto:javelin@javelin.is" aria-label="Email Javelin AI">javelin@javelin.is</a>
+        </p>
     </div>
-    
-    <div class="section">
-        <h2>Work in Progress</h2>
-        <p>We're currently working on expanding our website to provide more information about our services and expertise. In the meantime, please feel free to contact us through the following channels:</p>
-        <div class="contact-links">
-            <a href="https://www.linkedin.com/company/javelin-ai" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-                LinkedIn
-            </a>
-            <a href="mailto:javelin@javelin.is">
-                <img src="https://cdn-icons-png.flaticon.com/512/561/561188.png" alt="Email">
-                Email
-            </a>
-        </div>
-    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Page loaded successfully');
+        });
+    </script>
 </body>
 </html>
