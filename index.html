@@ -627,9 +627,9 @@
                 </div>
                 <form id="contact-form" class="contact-form">
                     <h3>Sendu okkur skilaboð</h3>
-                    <input type="text" name="entry.123456789" placeholder="Nafn" required>
-                    <input type="email" name="entry.987654321" placeholder="Netfang" required>
-                    <textarea name="entry.456789123" placeholder="Skilaboð" required></textarea>
+                    <input type="text" name="Nafn" placeholder="Nafn" required>
+                    <input type="email" name="Netfang" placeholder="Netfang" required>
+                    <textarea name="Skilaboð" placeholder="Skilaboð" required></textarea>
                     <button type="submit" class="btn btn-primary">Senda</button>
                 </form>
             </div>
@@ -669,14 +669,18 @@
             const form = e.target;
             const formData = new FormData(form);
             
-            fetch('https://forms.gle/qo9ZqorZ7K9z5km59', {
+            fetch('https://script.google.com/macros/s/AKfycbxZhRtY2zvDS37Lh28PZ5RMjGiT-sNakUExTg6XTQsieOOZviXv7dUbkbTmRwrYAh4Z/exec', {
                 method: 'POST',
-                mode: 'no-cors',
                 body: formData
             })
-            .then(response => {
-                form.reset();
-                alert('Takk fyrir skilaboðin! Við munum hafa samband fljótlega.');
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    form.reset();
+                    alert('Takk fyrir skilaboðin! Við munum hafa samband fljótlega.');
+                } else {
+                    throw new Error('Form submission failed');
+                }
             })
             .catch(error => {
                 console.error('Error:', error);
