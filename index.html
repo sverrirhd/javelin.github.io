@@ -427,6 +427,78 @@
                 flex-direction: column;
             }
         }
+
+        .um-okkur-content {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .um-okkur-text {
+            flex: 1;
+        }
+
+        .um-okkur-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .main-description {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .um-okkur-text h3 {
+            color: var(--gold);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .um-okkur-text ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .um-okkur-text li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .um-okkur-text li::before {
+            content: "\2022";
+            color: var(--gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .team-image {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .um-okkur-content {
+                flex-direction: column;
+            }
+            
+            .um-okkur-image {
+                order: -1;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .google-form-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+          }
+
     </style>
 </head>
 <body>
@@ -458,7 +530,23 @@
     <main class="container">
         <section id="um-okkur" class="section">
             <h2>Um okkur</h2>
-            <p>Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi.</p>
+            <div class="um-okkur-content">
+                <div class="um-okkur-text">
+                    <p class="main-description">Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi.</p>
+                    <h3>Okkar markmið</h3>
+                    <p>Að efla íslensk fyrirtæki með nýjustu tækni í gervigreind og gera þeim kleift að ná forskoti á sínu sviði.</p>
+                    <h3>Af hverju Javelin?</h3>
+                    <ul>
+                        <li>Sérfræðiþekking á gervigreind</li>
+                        <li>Reynsla af fjölbreyttum verkefnum</li>
+                        <li>Persónuleg þjónusta og eftirfylgni</li>
+                        <li>Áhersla á hagnýtar lausnir</li>
+                    </ul>
+                </div>
+                <div class="um-okkur-image">
+                    <img src="path/to/your/image.jpg" alt="Javelin AI team" class="team-image">
+                </div>
+            </div>
         </section>
         
         <section id="thjonusta" class="section">
@@ -467,7 +555,6 @@
                 <div class="service-card">
                     <i class="fas fa-chalkboard-teacher"></i>
                     <h3>Þjálfun og fræðsla</h3>
-                    <p>Við bjóðum upp á sérsniðna fræðslu í gervigreind:</p>
                     <div class="service-offerings">
                         <div class="service-item">
                             <i class="fas fa-graduation-cap"></i>
@@ -484,7 +571,6 @@
                 <div class="service-card">
                     <i class="fas fa-comments"></i>
                     <h3>Ráðgjöf</h3>
-                    <p>Sérfræðiráðgjöf í gervigreind:</p>
                     <div class="service-offerings">
                         <div class="service-item">
                             <i class="fas fa-chart-line"></i>
@@ -500,8 +586,7 @@
                 </div>
                 <div class="service-card">
                     <i class="fas fa-cogs"></i>
-                    <h3>Innleiðing</h3>
-                    <p>Aðstoð við innleiðingu gervigreindar:</p>
+                    <h3>Ýmis AI verkefni</h3>
                     <div class="service-offerings">
                         <div class="service-item">
                             <i class="fas fa-robot"></i>
@@ -540,11 +625,11 @@
                         </a>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+                <form id="contact-form" class="contact-form">
                     <h3>Sendu okkur skilaboð</h3>
-                    <input type="text" name="name" placeholder="Nafn" required>
-                    <input type="email" name="email" placeholder="Netfang" required>
-                    <textarea name="message" placeholder="Skilaboð" required></textarea>
+                    <input type="text" name="entry.123456789" placeholder="Nafn" required>
+                    <input type="email" name="entry.987654321" placeholder="Netfang" required>
+                    <textarea name="entry.456789123" placeholder="Skilaboð" required></textarea>
                     <button type="submit" class="btn btn-primary">Senda</button>
                 </form>
             </div>
@@ -577,6 +662,26 @@
             } else {
                 document.querySelector('.navbar').classList.remove('navbar-scrolled');
             }
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            fetch('YOUR_GOOGLE_FORM_SUBMISSION_URL', {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            })
+            .then(response => {
+                form.reset();
+                alert('Takk fyrir skilaboðin! Við munum hafa samband fljótlega.');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Því miður kom upp villa. Vinsamlegast reyndu aftur síðar.');
+            });
         });
     </script>
 </body>
