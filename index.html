@@ -247,6 +247,46 @@
                 padding: 2rem;
             }
         }
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .service-card {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            color: var(--light-text);
+        }
+
+        @media (max-width: 768px) {
+            .services-container {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -283,11 +323,23 @@
         
         <section id="thjonusta" class="section">
             <h2>Þjónusta okkar</h2>
-            <ul class="services">
-                <li>Þjálfun og fræðsla í gervigreind</li>
-                <li>Ráðgjöf í gervigreind</li>
-                <li>Innleiðing gervigreindalausna</li>
-            </ul>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Þjálfun og fræðsla</h3>
+                    <p>Þjálfun og fræðsla í gervigreind</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Ráðgjöf</h3>
+                    <p>Ráðgjöf í gervigreind</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Innleiðing</h3>
+                    <p>Innleiðing gervigreindalausna</p>
+                </div>
+            </div>
         </section>
         
         <section id="hafdu-samband" class="section">
