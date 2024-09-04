@@ -249,17 +249,19 @@
         }
         .services-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             gap: 2rem;
         }
 
         .service-card {
-            flex: 1;
+            flex: 1 1 300px;
             background-color: rgba(255, 255, 255, 0.05);
             padding: 2rem;
             border-radius: 10px;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 2rem;
         }
 
         .service-card:hover {
@@ -282,9 +284,39 @@
             color: var(--light-text);
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             .services-container {
-                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .service-card {
+                flex-basis: calc(50% - 2rem);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-card {
+                flex-basis: 100%;
+            }
+
+            .section {
+                padding: 2rem 1rem;
+            }
+
+            .service-offerings {
+                gap: 0.5rem;
+            }
+
+            .service-item {
+                padding: 0.75rem;
+            }
+
+            .service-item h4 {
+                font-size: 1rem;
+            }
+
+            .service-item p {
+                font-size: 0.8rem;
             }
         }
 
@@ -325,6 +357,75 @@
         .service-item p {
             font-size: 0.9rem;
             margin-bottom: 0;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .contact-info, .contact-form {
+            flex: 1;
+        }
+
+        .contact-details {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact-details li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-details i {
+            color: var(--gold);
+            margin-right: 0.5rem;
+            width: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--gold);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--hover-gold);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--light-text);
+            border-radius: 4px;
+        }
+
+        .contact-form textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -419,14 +520,33 @@
         
         <section id="hafdu-samband" class="section">
             <h2>Hafðu samband</h2>
-            <p>Fullbúin vefsíða okkar er væntanleg. Fyrir fyrirspurnir eða samstarf, hafðu samband við okkur:</p>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/company/javelin-ai" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i>LinkedIn
-                </a>
-                <a href="mailto:javelin@javelin.is">
-                    <i class="fas fa-envelope"></i>Tölvupóstur
-                </a>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Við hlökkum til að heyra frá þér. Hafðu samband fyrir fyrirspurnir eða til að ræða samstarf:</p>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-envelope"></i> javelin@javelin.is</li>
+                        <li><i class="fas fa-phone"></i> +354 123 4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Reykjavík, Ísland</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/javelin-ai" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/JavelinAI" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/JavelinAI" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h3>Sendu okkur skilaboð</h3>
+                    <input type="text" name="name" placeholder="Nafn" required>
+                    <input type="email" name="email" placeholder="Netfang" required>
+                    <textarea name="message" placeholder="Skilaboð" required></textarea>
+                    <button type="submit" class="btn btn-primary">Senda</button>
+                </form>
             </div>
         </section>
     </main>
