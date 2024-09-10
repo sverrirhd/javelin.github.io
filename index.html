@@ -19,21 +19,13 @@
     <!-- Add this line for the consent banner styles -->
     <link rel="stylesheet" href="consent-banner.css">
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5M9CHFF7L"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-D5M9CHFF7L');
-    </script>
+   
 
 </head>
 <body>
     <!-- Add this at the beginning of the body -->
     <div id="consent-banner" class="consent-banner">
-        <p>We use cookies to enhance your experience and analyze our traffic. By clicking "Accept", you agree to our use of cookies. For more information, please read our <a href="#" id="privacy-policy-link">Privacy Policy</a>.</p>
+        <p>This website uses cookies to ensure you get the best experience on our website.</p>
         <button id="accept-cookies">Accept</button>
         <button id="reject-cookies">Reject</button>
     </div>
@@ -186,6 +178,26 @@
     <script src="consent-banner.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="particles.js"></script>
+
+<!-- Add this script to handle Google Analytics loading -->
+<script>
+function loadGoogleAnalytics() {
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-D5M9CHFF7L';
+    script.async = true;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D5M9CHFF7L');
+}
+
+// Check if consent has been given (you'll need to implement this in consent-banner.js)
+if (localStorage.getItem('cookiesAccepted') === 'true') {
+    loadGoogleAnalytics();
+}
+</script>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 const particleCount = 2000;
-const particleSize = 0.02;
+const particleSize = 0.001;
 
 let scene, camera, renderer, particles;
 let direction = 1; // 1 for inward, -1 for outward
