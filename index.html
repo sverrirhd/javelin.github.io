@@ -15,6 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Add this line for the consent banner styles -->
+    <link rel="stylesheet" href="consent-banner.css">
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5M9CHFF7L"></script>
     <script>
@@ -27,6 +31,13 @@
 
 </head>
 <body>
+    <!-- Add this at the beginning of the body -->
+    <div id="consent-banner" class="consent-banner">
+        <p>We use cookies to enhance your experience and analyze our traffic. By clicking "Accept", you agree to our use of cookies. For more information, please read our <a href="#" id="privacy-policy-link">Privacy Policy</a>.</p>
+        <button id="accept-cookies">Accept</button>
+        <button id="reject-cookies">Reject</button>
+    </div>
+
     <nav class="navbar">
         <div class="navbar-container">
             <a href="#" class="navbar-brand">Javelin AI</a>
@@ -42,6 +53,7 @@
     </nav>
 
     <header class="hero">
+        <div id="particles-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
         <div class="hero-content">
             <div class="logo-container">
                 <img src="images/JavelinAI-circle.png" alt="Javelin AI Merki" class="logo">
@@ -171,5 +183,9 @@
 
 
     <script src="script.js"></script>
+    <script src="consent-banner.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="particles.js"></script>
+
 </body>
 </html>
