@@ -206,10 +206,8 @@ function loadGoogleAnalytics() {
     document.head.appendChild(script);
 }
 
-// Check if consent has been given (you'll need to implement this in consent-banner.js)
-if (localStorage.getItem('cookiesAccepted') === 'true') {
-    loadGoogleAnalytics();
-}
+// Load Google Analytics regardless of consent status (for testing purposes)
+loadGoogleAnalytics();
 </script>
 
 </body>
