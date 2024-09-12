@@ -195,15 +195,15 @@
 <!-- Add this script to handle Google Analytics loading -->
 <script>
 function loadGoogleAnalytics() {
-    var script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-D5M9CHFF7L';
-    script.async = true;
-    document.head.appendChild(script);
-
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-D5M9CHFF7L');
+
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-D5M9CHFF7L';
+    script.async = true;
+    document.head.appendChild(script);
 }
 
 // Check if consent has been given (you'll need to implement this in consent-banner.js)
