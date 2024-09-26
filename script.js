@@ -1,4 +1,3 @@
-
 // Toggle mobile menu
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.navbar-menu');
@@ -24,4 +23,45 @@ window.addEventListener('scroll', () => {
     } else {
         document.querySelector('.navbar').classList.remove('navbar-scrolled');
     }
+});
+
+const langToggleBtn = document.getElementById('language-toggle-btn');
+const currentFlag = document.getElementById('current-flag');
+const currentLang = document.getElementById('current-lang');
+
+let isIcelandic = true;
+
+async function switchLanguage() {
+    const newLang = isIcelandic ? 'is' : 'en';
+    const response = await fetch(`${newLang}.json`);
+    const translations = await response.json();
+
+    document.querySelectorAll('[data-lang-key]').forEach(element => {
+        const keys = element.dataset.langKey.split('.');
+        let value = translations;
+        for (const key of keys) {
+            value = value[key];
+        }
+        element.textContent = value;
+    });
+
+    document.documentElement.lang = newLang;
+}
+
+langToggleBtn.addEventListener('click', switchLanguage);
+
+function toggleLanguage(checkbox) {
+    isIcelandic = !checkbox.checked;
+    switchLanguage();
+}
+
+// Initialize the language toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const languageToggle = document.getElementById('language-toggle-checkbox');
+    languageToggle.checked = !isIcelandic;
+});
+
+// Initialize the toggle state
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('is-flag').classList.add('active');
 });

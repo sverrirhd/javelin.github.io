@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javelin AI</title>
+    <title data-lang-key="meta.title">Javelin AI</title>
     
     <!-- Add these lines for the favicon -->
     <link rel="icon" href="images/JavelinAI-circle.png" type="image/png">
@@ -18,29 +18,34 @@
     
     <!-- Add this line for the consent banner styles -->
     <link rel="stylesheet" href="consent-banner.css">
+    <link rel="stylesheet" href="language-toggle.css">
     
     <!-- Add Open Graph meta tags -->
-    <meta property="og:title" content="Javelin AI">
-    <meta property="og:description" content="Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi.">
+    <meta property="og:title" content="Javelin AI" data-lang-key="meta.og.title">
+    <meta property="og:description" content="Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi." data-lang-key="meta.og.description">
     <meta property="og:image" content="https://javelin.is/images/JavelinAI-circle.png">
     <meta property="og:url" content="https://javelin.is">
     <meta property="og:type" content="website">
     
     <!-- Add Twitter Card meta tags (optional, but recommended) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Javelin AI">
-    <meta name="twitter:description" content="Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi.">
+    <meta name="twitter:title" content="Javelin AI" data-lang-key="meta.twitter.title">
+    <meta name="twitter:description" content="Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi." data-lang-key="meta.twitter.description">
     <meta name="twitter:image" content="https://javelin.is/images/JavelinAI-circle.png">
     
-   
+    <!-- Add meta description -->
+    <meta name="description" content="Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi." data-lang-key="meta.description">
+
+    <!-- Add meta keywords -->
+    <meta name="keywords" content="Javelin AI, Gervigreind, Fræðsla, Ráðgjöf, AI Verkefni, Ísland" data-lang-key="meta.keywords">
 
 </head>
 <body>
     <!-- Add this at the beginning of the body -->
     <div id="consent-banner" class="consent-banner">
-        <p>This website uses cookies to ensure you get the best experience on our website.</p>
-        <button id="accept-cookies">Accept</button>
-        <button id="reject-cookies">Reject</button>
+        <p data-lang-key="consent.message">This website uses cookies to ensure you get the best experience on our website.</p>
+        <button id="accept-cookies" data-lang-key="consent.accept">Accept</button>
+        <button id="reject-cookies" data-lang-key="consent.reject">Reject</button>
     </div>
 
     <nav class="navbar">
@@ -50,9 +55,19 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="navbar-menu">
-                <li class="nav-item"><a href="#um-okkur" class="nav-link">Um okkur</a></li>
-                <li class="nav-item"><a href="#thjonusta" class="nav-link">Þjónusta</a></li>
-                <li class="nav-item"><a href="#hafdu-samband" class="nav-link">Hafðu samband</a></li>
+                <li class="nav-item"><a href="#um-okkur" class="nav-link" data-lang-key="nav.about">Um okkur</a></li>
+                <li class="nav-item"><a href="#thjonusta" class="nav-link" data-lang-key="nav.services">Þjónusta</a></li>
+                <li class="nav-item"><a href="#hafdu-samband" class="nav-link" data-lang-key="nav.contact">Hafðu samband</a></li>
+                <li class="nav-item">
+                    <div class="language-toggle">
+                        <span id="is-lang">IS</span>
+                        <label class="switch">
+                            <input type="checkbox" id="language-toggle-checkbox" onchange="toggleLanguage(this)">
+                            <span class="slider"></span>
+                        </label>
+                        <span id="en-lang">EN</span>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -61,101 +76,101 @@
         <div id="particles-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
         <div class="hero-content">
             <div class="logo-container">
-                <img src="images/JavelinAI-circle.png" alt="Javelin AI Merki" class="logo">
+                <img src="images/JavelinAI-circle.png" alt="Javelin AI Logo" class="logo">
             </div>
             <h1>Javelin AI</h1>
-            <a href="#um-okkur" class="btn btn-primary">Kynntu þér meira</a>
+            <a href="#um-okkur" class="btn btn-primary" data-lang-key="hero.cta">Kynntu þér meira</a>
         </div>
     </header>
 
     <main class="container">
         <section id="um-okkur" class="section um-okkur-section">
-            <h2>Um okkur</h2>
+            <h2 data-lang-key="um-okkur.title">Um okkur</h2>
             <div class="um-okkur-content">
-                <p class="main-description">Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi.</p>
+                <p class="main-description" data-lang-key="um-okkur.description">Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi.</p>
                 
                 <div class="um-okkur-info">
                     <div class="um-okkur-column">
-                        <h3></i> Okkar markmið</h3>
-                        <p>Að efla íslensk fyrirtæki með nýjustu tækni í gervigreind og gera þeim kleift að ná forskoti á sínu sviði.</p>
+                        <h3 data-lang-key="um-okkur.goals.title">Okkar markmið</h3>
+                        <p data-lang-key="um-okkur.goals.description">Að efla íslensk fyrirtæki með nýjustu tækni í gervigreind og gera þeim kleift að ná forskoti á sínu sviði.</p>
                     </div>
                     <div class="um-okkur-column">
-                        <h3>Af hverju Javelin?</h3>
+                        <h3 data-lang-key="um-okkur.why.title">Af hverju Javelin?</h3>
                         <ul>
-                            <li>Sérfræðiþekking á gervigreind</li>
-                            <li>Reynsla af fjölbreyttum verkefnum</li>
-                            <li>Persónuleg þjónusta og eftirfylgni</li>
-                            <li>Áhersla á hagnýtar lausnir</li>
+                            <li data-lang-key="um-okkur.why.item1">Sérfræðiþekking á gervigreind</li>
+                            <li data-lang-key="um-okkur.why.item2">Reynsla af fjölbreyttum verkefnum</li>
+                            <li data-lang-key="um-okkur.why.item3">Persónuleg þjónusta og eftirfylgni</li>
+                            <li data-lang-key="um-okkur.why.item4">Áhersla á hagnýtar lausnir</li>
                         </ul>
                     </div>
                 </div>
             </div>
             
-            <h3>Stofnendur</h3>
+            <h3 data-lang-key="um-okkur.founders.title">Stofnendur</h3>
             <div class="founders-container">
                 <div class="founder-card">
-                    <img src="images/sverrir_heidar_davidsson_endurmenntun.jpg" alt="Sverrir Heiðar Davíðsson" class="founder-image">
-                    <h4>Sverrir Heiðar Davíðsson</h4>
-                    <p>Sverrir Heiðar Davíðsson er hugbúnaðarverkfræðingur og starfaði þar til nýlega sem leiðtogi í hagnýtingu gervigreindar hjá Orkuveitunni. Sverrir er með M.Sc. í gervigreind og gagnavísindum frá DTU og B.Sc. í hugbúnaðarverkfræði frá HÍ. Hann er með hálfan áratug af reynslu með gervigreind að baki. Sverrir hefur kennt námskeið og haldið fyrirlestra um hagnýtingu gervigreindar hjá Endurmenntun og fjölmörgum fyrirtækjum síðan 2023.</p>
+                    <img src="images/sverrir_heidar_davidsson_endurmenntun.jpg" alt="Ljósmynd af Sverrir Heiðar Davíðsson" class="founder-image">
+                    <h4 data-lang-key="um-okkur.founders.sverrir.name">Sverrir Heiðar Davíðsson</h4>
+                    <p data-lang-key="um-okkur.founders.sverrir.description">Sverrir Heiðar Davíðsson er hugbúnaðarverkfræðingur og starfaði þar til nýlega sem leiðtogi í hagnýtingu gervigreindar hjá Orkuveitunni. Sverrir er með M.Sc. í gervigreind og gagnavísindum frá DTU og B.Sc. í hugbúnaðarverkfræði frá HÍ. Hann er með hálfan áratug af reynslu með gervigreind að baki. Sverrir hefur kennt námskeið og haldið fyrirlestra um hagnýtingu gervigreindar hjá Endurmenntun og fjölmörgum fyrirtækjum síðan 2023.</p>
                     <a href="mailto:sverrir@javelin.is" class="founder-email">sverrir@javelin.is</a>
                 </div>
                 <div class="founder-card">
-                    <img src="images/Steven.png" alt="Steven" class="founder-image">
-                    <h4>Steve Andersen</h4>
-                    <p>Steve er reynslumikill frumkvöðull sem hefur ástríðu fyrir því að nota tækni til að efla frumkvöðla og fyrirtæki um allan heim. Hann hefur stofnað og setið í stjórn fjölda fyrirtækja, þar á meðal Amplify Communications Group og JourneyTeam. Hann hefur áratuga reynslu af stjórnun, markaðsstjórnun, stefnumótun og hefur hjálpað mörgum fyrirtækjum og frumkvöðlum að vaxa í gegnum ýmis þróunarstig.</p>
+                    <img src="images/Steven.png" alt="Ljósmynd af Steve Andersen" class="founder-image">
+                    <h4 data-lang-key="um-okkur.founders.steve.name">Steve Andersen</h4>
+                    <p data-lang-key="um-okkur.founders.steve.description">Steve er reynslumikill frumkvöðull sem hefur ástríðu fyrir því að nota tækni til að efla frumkvöðla og fyrirtæki um allan heim. Hann hefur stofnað og setið í stjórn fjölda fyrirtækja, þar á meðal Amplify Communications Group og JourneyTeam. Hann hefur áratuga reynslu af stjórnun, markaðsstjórnun, stefnumótun og hefur hjálpað mörgum fyrirtækjum og frumkvöðlum að vaxa í gegnum ýmis þróunarstig.</p>
                     <a href="mailto:steven@javelin.is" class="founder-email">steve@javelin.is</a>
                 </div>
             </div>
         </section>
         
         <section id="thjonusta" class="section">
-            <h2>Þjónusta okkar</h2>
+            <h2 data-lang-key="thjonusta.title">Þjónusta okkar</h2>
             <div class="services-container">
                 <div class="service-card">
                     <i class="fas fa-chalkboard-teacher"></i>
-                    <h3>Þjálfun og fræðsla</h3>
+                    <h3 data-lang-key="thjonusta.education.title">Þjálfun og fræðsla</h3>
                     <div class="service-offerings">
                         <div class="service-item">
                             <i class="fas fa-graduation-cap"></i>
-                            <h4>Námskeið</h4>
-                            <p>Ítarleg og hagnýt námskeið um gervigreind fyrir starfsfólk og stjórnendur</p>
+                            <h4 data-lang-key="thjonusta.education.courses.title">Námskeið</h4>
+                            <p data-lang-key="thjonusta.education.courses.description">Ítarleg og hagnýt námskeið um gervigreind fyrir starfsfólk og stjórnendur</p>
                         </div>
                         <div class="service-item">
                             <i class="fas fa-microphone"></i>
-                            <h4>Fyrirlestrar</h4>
-                            <p>Áhugaverðir og fræðandi fyrirlestrar um nýjustu tólin og þróun í gervigreind</p>
+                            <h4 data-lang-key="thjonusta.education.lectures.title">Fyrirlestrar</h4>
+                            <p data-lang-key="thjonusta.education.lectures.description">Áhugaverðir og fræðandi fyrirlestrar um nýjustu tólin og þróun í gervigreind</p>
                         </div>
                     </div>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-comments"></i>
-                    <h3>Ráðgjöf</h3>
+                    <h3 data-lang-key="thjonusta.consulting.title">Ráðgjöf</h3>
                     <div class="service-offerings">
                         <div class="service-item">
                             <i class="fas fa-chart-line"></i>
-                            <h4>Stefnumótandi ráðgjöf</h4>
-                            <p>Heildstæð ráðgjöf fyrir framtíðarsýn fyrirtækisins í gervigreind</p>
+                            <h4 data-lang-key="thjonusta.consulting.strategic.title">Stefnumótandi ráðgjöf</h4>
+                            <p data-lang-key="thjonusta.consulting.strategic.description">Heildstæð ráðgjöf fyrir framtíðarsýn fyrirtækisins í gervigreind</p>
                         </div>
                         <div class="service-item">
                             <i class="fas fa-tasks"></i>
-                            <h4>Verkefnamiðuð ráðgjöf</h4>
-                            <p>Ráðgjöf fyrir ákveðin verkefni, starfsfólk eða áskoranir</p>
+                            <h4 data-lang-key="thjonusta.consulting.project.title">Verkefnamiðuð ráðgjöf</h4>
+                            <p data-lang-key="thjonusta.consulting.project.description">Ráðgjöf fyrir ákveðin verkefni, starfsfólk eða áskoranir</p>
                         </div>
                     </div>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-cogs"></i>
-                    <h3>Ýmis AI verkefni</h3>
+                    <h3 data-lang-key="thjonusta.ai-projects.title">Ýmis AI verkefni</h3>
                     <div class="service-offerings">
                         <div class="service-item">
                             <i class="fas fa-robot"></i>
-                            <h4>Sérhæfð aðstoð</h4>
-                            <p>Fáðu sérhæfða aðstoð við innleiðingu nýrra AI lausna</p>
+                            <h4 data-lang-key="thjonusta.ai-projects.custom.title">Sérhæfð aðstoð</h4>
+                            <p data-lang-key="thjonusta.ai-projects.custom.description">Fáðu sérhæfða aðstoð við innleiðingu nýrra AI lausna</p>
                         </div>
                         <div class="service-item">
                             <i class="fas fa-puzzle-piece"></i>
-                            <h4>Sérsniðnar lausnir</h4>
-                            <p>Láttu sérsníða lausnir að ykkar umhverfi og áskorunum</p>
+                            <h4 data-lang-key="thjonusta.ai-projects.customized.title">Sérsniðnar lausnir</h4>
+                            <p data-lang-key="thjonusta.ai-projects.customized.description">Láttu sérsníða lausnir að ykkar umhverfi og áskorunum</p>
                         </div>
                     </div>
                 </div>
@@ -163,18 +178,18 @@
         </section>
         
         <section id="hafdu-samband" class="section contact-section">
-            <h2>Hafðu samband</h2>
+            <h2 data-lang-key="contact.title">Hafðu samband</h2>
             <div class="contact-container">
                 <div class="contact-info">
-                    <p class="contact-intro">Við hlökkum til að heyra frá þér. Hafðu samband fyrir fyrirspurnir eða til að ræða samstarf:</p>
+                    <p class="contact-intro" data-lang-key="contact.intro">Við hlökkum til að heyra frá þér. Hafðu samband fyrir fyrirspurnir eða til að ræða samstarf:</p>
                     <div class="email-highlight">
                         <i class="fas fa-envelope"></i>
                         <a href="mailto:javelin@javelin.is" class="email-address">javelin@javelin.is</a>
                     </div>
                     <ul class="contact-details">
-                        <li><i class="fas fa-building"></i> Javelin ehf</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Borgartún 27, 105 Reykjavík</li>
-                        <li><i class="fas fa-id-card"></i> Kennitala: 560824-2030</li>
+                        <li><i class="fas fa-building"></i> <span data-lang-key="contact.company">Javelin ehf</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-lang-key="contact.address">Borgartún 27, 105 Reykjavík</span></li>
+                        <li><i class="fas fa-id-card"></i> <span data-lang-key="contact.id">Kennitala: 560824-2030</span></li>
                     </ul>
                 </div>
                 <div class="social-links">
@@ -186,29 +201,29 @@
         </section>
     </main>
 
-
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
     <script src="consent-banner.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="particles.js"></script>
+    <script src="particles.js"></script>
 
-<!-- Add this script to handle Google Analytics loading -->
-<script>
-function loadGoogleAnalytics() {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-D5M9CHFF7L');
+    <!-- Add this script to handle Google Analytics loading -->
+    <script>
+        function loadGoogleAnalytics() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-D5M9CHFF7L');
 
-    var script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-D5M9CHFF7L';
-    script.async = true;
-    document.head.appendChild(script);
-}
+            var script = document.createElement('script');
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-D5M9CHFF7L';
+            script.async = true;
+            document.head.appendChild(script);
+        }
 
-// Load Google Analytics regardless of consent status (for testing purposes)
-loadGoogleAnalytics();
-</script>
+        // Load Google Analytics regardless of consent status (for testing purposes)
+        loadGoogleAnalytics();
+    </script>
 
 </body>
 </html>

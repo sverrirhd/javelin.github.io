@@ -1,0 +1,106 @@
+{
+    "meta": {
+      "title": "Javelin AI - AI Solutions for Icelandic Companies",
+      "description": "Javelin provides education, consulting, and AI projects. We guide companies through their AI journey from the first step.",
+      "keywords": "Javelin AI, Artificial Intelligence, Education, Consulting, AI Projects, Iceland",
+      "og": {
+        "title": "Javelin AI - AI Solutions",
+        "description": "Javelin provides education, consulting, and AI projects. We guide companies through their AI journey from the first step."
+      },
+      "twitter": {
+        "title": "Javelin AI - AI Solutions",
+        "description": "Javelin provides education, consulting, and AI projects. We guide companies through their AI journey from the first step."
+      }
+    },
+    "consent": {
+      "message": "This website uses cookies to ensure you get the best experience on our website.",
+      "accept": "Accept",
+      "reject": "Reject"
+    },
+    "nav": {
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "hero": {
+      "cta": "Learn More"
+    },
+    "um-okkur": {
+      "title": "About Us",
+      "description": "Javelin provides education, consulting, and AI projects. We guide companies through their AI journey from the first step.",
+      "goals": {
+        "title": "Our Goals",
+        "description": "To empower companies with the latest AI technology and enable them to gain a competitive edge in their field."
+      },
+      "why": {
+        "title": "Why Javelin?",
+        "item1": "Expertise in artificial intelligence",
+        "item2": "Experience with diverse projects",
+        "item3": "Personal service and follow-up",
+        "item4": "Focus on practical solutions"
+      },
+      "founders": {
+        "title": "Founders",
+        "sverrir": {
+          "name": "Sverrir Heiðar Davíðsson",
+          "description": "Sverrir Heiðar Davíðsson is a software engineer and until recently worked as a leader in the application of artificial intelligence at Orkuveitan. Sverrir has an M.Sc. in artificial intelligence and data science from DTU and a B.Sc. in software engineering from the University of Iceland. He has half a decade of experience with artificial intelligence. Sverrir has taught courses and given lectures on the application of artificial intelligence at Endurmenntun and numerous companies since 2023."
+        },
+        "steve": {
+          "name": "Steve Andersen",
+          "description": "Steve is an experienced entrepreneur with a passion for using technology to empower entrepreneurs and businesses worldwide. He has founded and served on the board of numerous companies, including Amplify Communications Group and JourneyTeam. He has decades of experience in management, marketing, strategy, and has helped many companies and entrepreneurs grow through various stages of development."
+        }
+      }
+    },
+    "thjonusta": {
+      "title": "Our Services",
+      "education": {
+        "title": "Training and Education",
+        "courses": {
+          "title": "Courses",
+          "description": "Comprehensive and practical AI courses for employees and managers"
+        },
+        "lectures": {
+          "title": "Lectures",
+          "description": "Interesting and informative lectures on the latest tools and developments in AI"
+        }
+      },
+      "consulting": {
+        "title": "Consulting",
+        "strategic": {
+          "title": "Strategic Consulting",
+          "description": "Comprehensive consulting for the company's future vision in AI"
+        },
+        "project": {
+          "title": "Project-based Consulting",
+          "description": "Consulting for specific projects, staff, or challenges"
+        }
+      },
+      "ai-projects": {
+        "title": "Various AI Projects",
+        "custom": {
+          "title": "Specialized Assistance",
+          "description": "Get specialized assistance in implementing new AI solutions"
+        },
+        "customized": {
+          "title": "Customized Solutions",
+          "description": "Have solutions tailored to your environment and challenges"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "intro": "We look forward to hearing from you. Get in touch for inquiries or to discuss collaboration:",
+      "company": "Javelin ehf",
+      "address": "Borgartún 27, 105 Reykjavík",
+      "id": "ID number: 560824-2030",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send"
+      }
+    },
+    "footer": {
+      "rights": "All rights reserved."
+    }
+  }

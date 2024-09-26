@@ -1,0 +1,109 @@
+
+
+
+{
+    "meta": {
+      "title": "Javelin AI - Gervigreindarlausnir fyrir íslensk fyrirtæki",
+      "description": "Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi.",
+      "keywords": "Javelin AI, Gervigreind, Fræðsla, Ráðgjöf, AI Verkefni, Ísland",
+      "og": {
+        "title": "Javelin AI - Gervigreindarlausnir",
+        "description": "Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi."
+      },
+      "twitter": {
+        "title": "Javelin AI - Gervigreindarlausnir",
+        "description": "Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi."
+      }
+    },
+    "consent": {
+      "message": "Þessi vefsíða notar vafrakökur til að tryggja að þú fáir bestu mögulegu upplifun á vefsíðu okkar.",
+      "accept": "Samþykkja",
+      "reject": "Hafna"
+    },
+    "nav": {
+      "about": "Um okkur",
+      "services": "Þjónusta",
+      "contact": "Hafðu samband"
+    },
+    "hero": {
+      "cta": "Kynntu þér meira"
+    },
+    "um-okkur": {
+      "title": "Um okkur",
+      "description": "Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi.",
+      "goals": {
+        "title": "Okkar markmið",
+        "description": "Að efla fyrirtæki með nýjustu tækni í gervigreind og gera þeim kleift að ná forskoti á sínu sviði."
+      },
+      "why": {
+        "title": "Af hverju Javelin?",
+        "item1": "Sérfræðiþekking á gervigreind",
+        "item2": "Reynsla af fjölbreyttum verkefnum",
+        "item3": "Persónuleg þjónusta og eftirfylgni",
+        "item4": "Áhersla á hagnýtar lausnir"
+      },
+      "founders": {
+        "title": "Stofnendur",
+        "sverrir": {
+          "name": "Sverrir Heiðar Davíðsson",
+          "description": "Sverrir Heiðar Davíðsson er hugbúnaðarverkfræðingur og starfaði þar til nýlega sem leiðtogi í hagnýtingu gervigreindar hjá Orkuveitunni. Sverrir er með M.Sc. í gervigreind og gagnavísindum frá DTU og B.Sc. í hugbúnaðarverkfræði frá HÍ. Hann er með hálfan áratug af reynslu með gervigreind að baki. Sverrir hefur kennt námskeið og haldið fyrirlestra um hagnýtingu gervigreindar hjá Endurmenntun og fjölmörgum fyrirtækjum síðan 2023."
+        },
+        "steve": {
+          "name": "Steve Andersen",
+          "description": "Steve er reynslumikill frumkvöðull sem hefur ástríðu fyrir því að nota tækni til að efla frumkvöðla og fyrirtæki um allan heim. Hann hefur stofnað og setið í stjórn fjölda fyrirtækja, þar á meðal Amplify Communications Group og JourneyTeam. Hann hefur áratuga reynslu af stjórnun, markaðsstjórnun, stefnumótun og hefur hjálpað mörgum fyrirtækjum og frumkvöðlum að vaxa í gegnum ýmis þróunarstig."
+        }
+      }
+    },
+    "thjonusta": {
+      "title": "Þjónusta okkar",
+      "education": {
+        "title": "Þjálfun og fræðsla",
+        "courses": {
+          "title": "Námskeið",
+          "description": "Ítarleg og hagnýt námskeið um gervigreind fyrir starfsfólk og stjórnendur"
+        },
+        "lectures": {
+          "title": "Fyrirlestrar",
+          "description": "Áhugaverðir og fræðandi fyrirlestrar um nýjustu tólin og þróun í gervigreind"
+        }
+      },
+      "consulting": {
+        "title": "Ráðgjöf",
+        "strategic": {
+          "title": "Stefnumótandi ráðgjöf",
+          "description": "Heildstæð ráðgjöf fyrir framtíðarsýn fyrirtækisins í gervigreind"
+        },
+        "project": {
+          "title": "Verkefnamiðuð ráðgjöf",
+          "description": "Ráðgjöf fyrir ákveðin verkefni, starfsfólk eða áskoranir"
+        }
+      },
+      "ai-projects": {
+        "title": "Ýmis AI verkefni",
+        "custom": {
+          "title": "Sérhæfð aðstoð",
+          "description": "Fáðu sérhæfða aðstoð við innleiðingu nýrra AI lausna"
+        },
+        "customized": {
+          "title": "Sérsniðnar lausnir",
+          "description": "Láttu sérsníða lausnir að ykkar umhverfi og áskorunum"
+        }
+      }
+    },
+    "contact": {
+      "title": "Hafðu samband",
+      "intro": "Við hlökkum til að heyra frá þér. Hafðu samband fyrir fyrirspurnir eða til að ræða samstarf:",
+      "company": "Javelin ehf",
+      "address": "Borgartún 27, 105 Reykjavík",
+      "id": "Kennitala: 560824-2030",
+      "form": {
+        "name": "Nafn",
+        "email": "Netfang",
+        "message": "Skilaboð",
+        "submit": "Senda"
+      }
+    },
+    "footer": {
+      "rights": "Öll réttindi áskilin."
+    }
+  }
