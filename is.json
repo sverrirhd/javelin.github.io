@@ -1,6 +1,3 @@
-
-
-
 {
     "meta": {
       "title": "Javelin AI - Gervigreindarlausnir fyrir íslensk fyrirtæki",
@@ -30,7 +27,7 @@
     },
     "um-okkur": {
       "title": "Um okkur",
-      "description": "Javelin sér um fræðslu, ráðgjöf og verkefni í AI. Við fylgjum fyrirtækjum í gegnum þeirra AI vegferð frá fyrsta skrefi.",
+      "description": "Javelin sérhæfir sig í að aðstoða fyrirtæki við hagnýtingu gervigreindar. Við erum ekki að finna upp hjólið, heldur hjálpum fyrirtækjum að nýta bestu tiltæku lausnirnar.",
       "goals": {
         "title": "Okkar markmið",
         "description": "Að efla fyrirtæki með nýjustu tækni í gervigreind og gera þeim kleift að ná forskoti á sínu sviði."
@@ -51,6 +48,21 @@
         "steve": {
           "name": "Steve Andersen",
           "description": "Steve er reynslumikill frumkvöðull sem hefur ástríðu fyrir því að nota tækni til að efla frumkvöðla og fyrirtæki um allan heim. Hann hefur stofnað og setið í stjórn fjölda fyrirtækja, þar á meðal Amplify Communications Group og JourneyTeam. Hann hefur áratuga reynslu af stjórnun, markaðsstjórnun, stefnumótun og hefur hjálpað mörgum fyrirtækjum og frumkvöðlum að vaxa í gegnum ýmis þróunarstig."
+        }
+      },
+      "steps": {
+        "title": "Þrjú skref að árangri",
+        "step1": {
+          "title": "AI-læsi",
+          "description": "Fyrsta og mikilvægasta skrefið er að byggja upp trausta undirstöðuþekkingu meðal starfsfólks."
+        },
+        "step2": {
+          "title": "Greining tækifæra",
+          "description": "Við kortleggjum núverandi ferla og finnum tækifæri til umbóta með gervigreind."
+        },
+        "step3": {
+          "title": "Innleiðing",
+          "description": "Við aðstoðum við innleiðingu á völdum lausnum, hvort sem um ræðir þjálfun á tilbúnum lausnum eða þróun sérsniðinna lausna."
         }
       }
     },

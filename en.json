@@ -27,7 +27,7 @@
     },
     "um-okkur": {
       "title": "About Us",
-      "description": "Javelin provides education, consulting, and AI projects. We guide companies through their AI journey from the first step.",
+      "description": "Javelin specializes in helping companies utilize artificial intelligence. We don't reinvent the wheel, but rather help companies leverage the best available solutions.",
       "goals": {
         "title": "Our Goals",
         "description": "To empower companies with the latest AI technology and enable them to gain a competitive edge in their field."
@@ -48,6 +48,21 @@
         "steve": {
           "name": "Steve Andersen",
           "description": "Steve is an experienced entrepreneur with a passion for using technology to empower entrepreneurs and businesses worldwide. He has founded and served on the board of numerous companies, including Amplify Communications Group and JourneyTeam. He has decades of experience in management, marketing, strategy, and has helped many companies and entrepreneurs grow through various stages of development."
+        }
+      },
+      "steps": {
+        "title": "Three Steps to Success",
+        "step1": {
+          "title": "AI Literacy",
+          "description": "The first and most important step is building a solid foundation of knowledge among staff."
+        },
+        "step2": {
+          "title": "Opportunity Analysis",
+          "description": "We map current processes and identify opportunities for improvement using AI."
+        },
+        "step3": {
+          "title": "Implementation",
+          "description": "We assist with implementing selected solutions, whether training on existing solutions or developing custom solutions."
         }
       }
     },

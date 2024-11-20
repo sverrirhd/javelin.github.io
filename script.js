@@ -25,10 +25,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const langToggleBtn = document.getElementById('language-toggle-btn');
-const currentFlag = document.getElementById('current-flag');
-const currentLang = document.getElementById('current-lang');
-
 let isIcelandic = true;
 
 async function switchLanguage() {
@@ -48,8 +44,6 @@ async function switchLanguage() {
     document.documentElement.lang = newLang;
 }
 
-langToggleBtn.addEventListener('click', switchLanguage);
-
 function toggleLanguage(checkbox) {
     isIcelandic = !checkbox.checked;
     switchLanguage();
@@ -59,9 +53,4 @@ function toggleLanguage(checkbox) {
 document.addEventListener('DOMContentLoaded', () => {
     const languageToggle = document.getElementById('language-toggle-checkbox');
     languageToggle.checked = !isIcelandic;
-});
-
-// Initialize the toggle state
-document.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById('is-flag').classList.add('active');
 });
