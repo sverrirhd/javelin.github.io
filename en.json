@@ -40,7 +40,7 @@
         "item4": "Focus on practical solutions"
       },
       "founders": {
-        "title": "Founders",
+        "title": "The Team",
         "sverrir": {
           "name": "Sverrir Heiðar Davíðsson",
           "description": "Sverrir Heiðar Davíðsson is a software engineer and until recently worked as a leader in the application of artificial intelligence at Orkuveitan. Sverrir has an M.Sc. in artificial intelligence and data science from DTU and a B.Sc. in software engineering from the University of Iceland. He has half a decade of experience with artificial intelligence. Sverrir has taught courses and given lectures on the application of artificial intelligence at Endurmenntun and numerous companies since 2023."
@@ -48,6 +48,10 @@
         "steve": {
           "name": "Steve Andersen",
           "description": "Steve is an experienced entrepreneur with a passion for using technology to empower entrepreneurs and businesses worldwide. He has founded and served on the board of numerous companies, including Amplify Communications Group and JourneyTeam. He has decades of experience in management, marketing, strategy, and has helped many companies and entrepreneurs grow through various stages of development."
+        },
+        "petur": {
+          "name": "Pétur Már Sigurðsson",
+          "description": "Pétur Már Sigurðsson works as a specialist in AI implementation. Pétur has extensive experience as a programmer and CTO, handling diverse projects in consulting, education, implementation, and development of various AI solutions."
         }
       },
       "steps": {

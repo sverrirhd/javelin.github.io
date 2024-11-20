@@ -40,7 +40,7 @@
         "item4": "Áhersla á hagnýtar lausnir"
       },
       "founders": {
-        "title": "Stofnendur",
+        "title": "Teymið",
         "sverrir": {
           "name": "Sverrir Heiðar Davíðsson",
           "description": "Sverrir Heiðar Davíðsson er hugbúnaðarverkfræðingur og starfaði þar til nýlega sem leiðtogi í hagnýtingu gervigreindar hjá Orkuveitunni. Sverrir er með M.Sc. í gervigreind og gagnavísindum frá DTU og B.Sc. í hugbúnaðarverkfræði frá HÍ. Hann er með hálfan áratug af reynslu með gervigreind að baki. Sverrir hefur kennt námskeið og haldið fyrirlestra um hagnýtingu gervigreindar hjá Endurmenntun og fjölmörgum fyrirtækjum síðan 2023."
@@ -48,6 +48,10 @@
         "steve": {
           "name": "Steve Andersen",
           "description": "Steve er reynslumikill frumkvöðull sem hefur ástríðu fyrir því að nota tækni til að efla frumkvöðla og fyrirtæki um allan heim. Hann hefur stofnað og setið í stjórn fjölda fyrirtækja, þar á meðal Amplify Communications Group og JourneyTeam. Hann hefur áratuga reynslu af stjórnun, markaðsstjórnun, stefnumótun og hefur hjálpað mörgum fyrirtækjum og frumkvöðlum að vaxa í gegnum ýmis þróunarstig."
+        },
+        "petur": {
+          "name": "Pétur Már Sigurðsson",
+          "description": "Pétur Már Sigurðsson starfar sem sérfræðingur í innleiðingu gervigreindar. Pétur hefur mikla reynslu sem forritari og tæknistjóri og sinnir fjölbreyttum verkefnum í ráðgjöf, fræðslu, innleiðingu og gerð á ýmsum AI lausnum."
         }
       },
       "steps": {

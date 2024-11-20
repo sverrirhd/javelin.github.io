@@ -482,20 +482,17 @@ h2 {
 }
 
 .founders-container {
-    display: flex;
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     margin-top: 2rem;
 }
 
 .founder-card {
-    flex: 1;
     background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
     padding: 2rem;
-    text-align: left;
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
 }
 
 .founder-card:hover {
@@ -536,28 +533,9 @@ h2 {
     color: var(--hover-gold);
 }
 
-@media (max-width: 992px) {
-    .founders-container {
-        flex-direction: column;
-    }
-}
-
 @media (max-width: 768px) {
-    .founder-card {
-        padding: 1.5rem;
-    }
-
-    .founder-image {
-        width: 150px;
-        height: 150px;
-    }
-
-    .founder-card h4 {
-        font-size: 1.3rem;
-    }
-
-    .founder-card p {
-        font-size: 0.9rem;
+    .founders-container {
+        grid-template-columns: 1fr;
     }
 }
 
