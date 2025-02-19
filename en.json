@@ -52,6 +52,10 @@
         "petur": {
           "name": "Pétur Már Sigurðsson",
           "description": "Pétur Már Sigurðsson works as a specialist in AI implementation. Pétur has extensive experience as a programmer and CTO, handling diverse projects in consulting, education, implementation, and development of various AI solutions."
+        },
+        "kristjan": {
+          "name": "Kristján Gíslason",
+          "description": "Kristján is an industrial engineer with BS and MS degrees from the University of Iceland and works as a business development and project manager for Javelin AI. He has been involved in process improvements and digitalization in manufacturing and heavy industry, with experience in automation and data-driven decision making. Kristján has also taught various courses in quality management, lean management, and problem-solving methodologies."
         }
       },
       "steps": {
